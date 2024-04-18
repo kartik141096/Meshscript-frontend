@@ -1,0 +1,102 @@
+<main id="main">
+
+    <!-- ======= Contact Section ======= -->
+    <style>
+      
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./../../../assets/img/hero/contact.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  color: aliceblue;
+}
+    </style>
+    <div class="hero-image">
+      <div class="hero-text">
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <h1 style="font-size: 80px; font-weight: 100;">Contact Us</h1><br>
+      </div>
+    </div>
+
+    <section id="contact" class="contact">
+
+      <div class="container">
+
+      
+       
+
+        <div class="row mt-5 justify-content-center" data-aos="fade-up">
+          <div class="section-title">
+            <h1 style="font-family: 'Ruthie', cursive; font-size: 80px; text-align: center; color: #1bbd36;">Write us your query</h1>
+          </div>
+          <div class="col-lg-10">
+            
+
+
+
+            <form action="contact.php" method="post" class="email-form">
+              
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+
+              <div class="row">
+              <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="text" class="form-control" name="contact" id="contact" placeholder="Your Contact" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <select name="Service" id="service">
+                    <option value="#">Select Service</option>
+                    <option value="Website Development">Website Development</option>
+                    <option value="Application Development">Application Development</option>
+                    <option value="Mobile App Development">Mobile App Development</option>
+                    <option value="Posters And Banner Designing">Posters And Banner Designing</option>
+                    <option value="Logo Designing">Logo Designing</option>
+                    <option value="Search Engine Optimization">Search Engine Optimization</option>
+                    <option value="Social Media Management">Social Media Management</option>
+                    <option value="Youtube Advertisement">Youtube Advertisement</option>
+                    <option value="Google Advertisement">Google Advertisement</option>
+                    <option value="CRM Development">CRM Development</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                  <input type="text" name="subject" class="form-control" id="subject" placeholder="subject" required>
+                </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit" name="submitform">Send Message</button></div>
+            </form>
+
+
+
+
+
+          </div>
+
+        </div>
+<app-contact-detail></app-contact-detail>
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
